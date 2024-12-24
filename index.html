@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RuEd Boutique</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #000000;
+            color: white;
+            margin: 0;
+            padding: 0;
+            text-align: justify;
+            font-weight: bold;
+        }
+
+        .main-container {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin: 20px;
+        }
+
+        .main-image {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            animation: pendulum 2s infinite ease-in-out;
+        }
+
+        .welcome-text {
+            font-size: 36px;
+            font-style: italic;
+            color: white;
+            margin-left: 20px;
+            text-align: center;
+        }
+
+        @keyframes pendulum {
+            0% { transform: rotate(0deg); }
+            50% { transform: rotate(15deg); }
+            100% { transform: rotate(0deg); }
+        }
+
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            border: 2px solid #40E0D0;
+            text-align: center;
+        }
+
+        th, td {
+            padding: 10px;
+            color: white;
+        }
+
+        .gold-table img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+        }
+
+        .gold-table-images img {
+            width: 100%;
+            height: auto;
+        }
+
+        .gold-table-images img:hover {
+            transform: scale(1.1);
+        }
+
+        .gray-table {
+            background-color: #000000;
+        }
+
+        .button {
+            background-color: #40E0D0;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            cursor: pointer;
+            margin-top: 10px;
+            border: none;
+        }
+
+        .button:hover {
+            background-color: #000000;
+        }
+
+        .social-icons img {
+            width: 40px;
+            margin: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .social-icons img:hover {
+            transform: scale(1.2);
+        }
+
+        .thank-you {
+            background-color: #000000;
+            text-align: left;
+            padding: 10px;
+            width: 90%;
+            margin: 20px auto;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                font-size: 14px;
+                padding: 10px;
+            }
+
+            .main-container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .main-image {
+                margin: 0 auto;
+            }
+
+            .welcome-text {
+                margin-left: 0;
+                font-size: 24px;
+            }
+
+            table {
+                width: 100%;
+            }
+
+            td, th {
+                font-size: 12px;
+                padding: 8px;
+            }
+
+            .gold-table img,
+            .gold-table-images img,
+            .social-icons img {
+                width: 50px;
+                height: 50px;
+            }
+
+            .button {
+                padding: 8px 16px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .welcome-text {
+                font-size: 18px;
+            }
+
+            .thank-you {
+                width: 100%;
+                text-align: center;
+            }
+
+            .main-image {
+                width: 120px;
+                height: 120px;
+            }
+
+            .gold-table img {
+                width: 40px;
+                height: 40px;
+            }
+
+            .social-icons img {
+                width: 30px;
+                height: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <img src="https://scontent.fmex22-1.fna.fbcdn.net/v/t39.30808-6/419257106_367582092694708_2671917173911170927_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=vjy0CVlcbB0Q7kNvgEntINN&_nc_oc=AdgJ8-4G0MYB8sr2kBqWz6qRyE2g36o81TXP9-HfOxa_U2GAdOjq3TP-5uik96g9MZsz0Znhexg3LSNwb4Un63dZ&_nc_zt=23&_nc_ht=scontent.fmex22-1.fna&_nc_gid=AUPzacH34ExaT_W311fBM3j&oh=00_AYAWPrLLniOkQZNOSyLZJJFl8kScK5FVdRuzEONA93HXhQ&oe=6770D39C" alt="Imagen Principal" class="main-image">
+        <div class="welcome-text">
+            ¡Bienvenido a RuEd Boutique! Estamos encantados de que nos visites.
+        </div>
+    </div>
+
+    <table class="gold-table">
+        <tr>
+            <td><strong>Envíos sin costo en puntos acordados a las entregas</strong></td>
+            <td>
+                <img src="https://cdn.pixabay.com/animation/2022/11/10/13/26/13-26-03-556_512.gif" alt="Camión de Envío">
+            </td>
+        </tr>
+    </table>
+
+    <table class="gold-table-images">
+        <tr>
+            <td>
+                <a href="">
+                    <img src="https://img.freepik.com/vector-premium/sitio-web-construccion-laptop_24911-54687.jpg" alt="Imagen 1">
+                </a>
+                <p>Descripción 1</p>
+            </td>
+            <td>
+                <a href="">
+                    <img src="https://img.freepik.com/vector-premium/sitio-web-construccion-laptop_24911-54687.jpg" alt="Imagen 2">
+                </a>
+                <p>Descripción 2</p>
+            </td>
+            <td>
+                <a href="">
+                    <img src="https://img.freepik.com/vector-premium/sitio-web-construccion-laptop_24911-54687.jpg" alt="Imagen 3">
+                </a>
+                <p>Descripción 3</p>
+            </td>
+        </tr>
+    </table>
+
+    <table class="gray-table">
+        <tr>
+            <td>
+                <img src="https://img.freepik.com/vector-premium/sitio-web-construccion-laptop_24911-54687.jpg" alt="Quiénes Somos">
+            </td>
+            <td>
+                <p>Somos una boutique dedicada a ofrecer lo mejor de la moda. Trabajamos con productos exclusivos para ti.</p>
+            </td>
+        </tr>
+    </table>
+
+    <table class="gray-table">
+        <tr>
+            <td>
+                <img src="https://segundoasegundo.com/wp-content/uploads/2016/02/maps-googke.jpg" alt="Bodega Matrix">
+            </td>
+            <td>
+                <p>Dirección: Calle Ficticia 123, Ciudad, País</p>
+                <button class="button" onclick="window.open('https://www.google.com/maps', '_blank')">Nuestra Ubicación</button>
+            </td>
+        </tr>
+    </table>
+
+    <table class="gold-table">
+        <tr>
+            <td class="social-text">
+                <p>¿Quieres saber de nuestras promociones y ofertas? Síguenos en nuestras redes sociales o contáctanos:</p>
+            </td>
+        </tr>
+        <tr>
+            <td class="social-icons">
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img src="https://e7.pngegg.com/pngimages/670/159/png-clipart-facebook-logo-social-media-facebook-computer-icons-linkedin-logo-facebook-icon-media-internet-thumbnail.png" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img src="https://i.pinimg.com/474x/1e/d6/e0/1ed6e0a9e69176a5fdb7e090a1046b86.jpg" alt="Instagram">
+                </a>
+                <a href="https://www.tiktok.com/" target="_blank">
+                    <img src="https://w7.pngwing.com/pngs/987/397/png-transparent-tiktok-social-media-logo-apps-social-media-icon-thumbnail.png" alt="TikTok">
+                </a>
+                <a href="https://wa.me/5511702629" target="_blank">
+                    <img src="https://img.freepik.com/vector-premium/logotipo-whatsapp-redondo-aislado-sobre-fondo-blanco_469489-900.jpg" alt="WhatsApp">
+                </a>
+            </td>
+        </tr>
+    </table>
+
+    <div class="thank-you">
+        <p>¡Gracias por visitarnos! Tu confianza es muy importante para nosotros.</p>
+    </div>
+</body>
+</html>

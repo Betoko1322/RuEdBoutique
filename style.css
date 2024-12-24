@@ -1,0 +1,72 @@
+/* General: Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Reducir el tamaño de fuente general */
+        padding: 10px;
+    }
+
+    .main-container {
+        flex-direction: column; /* Cambiar a columna en lugar de fila */
+        text-align: center;
+    }
+
+    .main-image {
+        margin: 0 auto; /* Centrar la imagen principal */
+    }
+
+    .welcome-text {
+        margin-left: 0; /* Quitar margen izquierdo */
+        font-size: 24px; /* Reducir tamaño del texto */
+    }
+
+    table {
+        width: 100%; /* Asegurarse de que las tablas ocupen el ancho completo */
+    }
+
+    td, th {
+        font-size: 12px; /* Reducir tamaño de texto en tablas */
+        padding: 8px; /* Ajustar el relleno */
+    }
+
+    .gold-table img,
+    .gold-table-images img,
+    .social-icons img {
+        width: 50px; /* Reducir tamaño de las imágenes */
+        height: 50px;
+    }
+
+    .button {
+        padding: 8px 16px; /* Reducir tamaño del botón */
+    }
+
+    .image-container {
+        flex-direction: column; /* Hacer que las imágenes se apilen verticalmente */
+    }
+}
+
+/* Para pantallas muy pequeñas (por ejemplo, teléfonos pequeños) */
+@media (max-width: 480px) {
+    .welcome-text {
+        font-size: 18px; /* Reducir más el tamaño del texto */
+    }
+
+    .thank-you {
+        width: 100%; /* Asegurar que ocupe todo el ancho */
+        text-align: center; /* Centrar texto */
+    }
+
+    .main-image {
+        width: 120px; /* Reducir tamaño de la imagen */
+        height: 120px;
+    }
+
+    .gold-table img {
+        width: 40px; /* Asegurar que las imágenes sean pequeñas */
+        height: 40px;
+    }
+
+    .social-icons img {
+        width: 30px; /* Reducir aún más los íconos sociales */
+        height: 30px;
+    }
+}
