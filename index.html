@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RuEd Boutique</title>
+    <style>
+        body {
+            font-family: 'bold';
+            background-color: #000000;
+            color: white;
+            margin: 0;
+            padding: 0;
+            text-align: justify; /* Justificar todo el texto en la página */
+            font-weight: bold; /* Aplicar negrita a todo el texto */
+        }
+
+        /* Imagen principal en la esquina izquierda */
+        .main-container {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin: 40px;
+        }
+
+        .main-image {
+            width: 160px; /* Tamaño inicial de la imagen */
+            height: 160px;
+            border-radius: 50%; /* Imagen circular */
+            animation: pendulum 2s infinite ease-in-out; /* Efecto péndulo */
+        }
+
+        /* Estilo para el texto de bienvenida */
+        .welcome-text {
+            font-size: 36px; /* Tamaño inicial grande del texto */
+            font-style: italic;
+            color: rgb(255, 255, 255);
+            margin-left: 30px;
+            text-align: center;
+        }
+
+        /* Efecto péndulo */
+        @keyframes pendulum {
+            0% { transform: rotate(0deg); }
+            50% { transform: rotate(15deg); }
+            100% { transform: rotate(0deg); }
+        }
+
+        /* Estilo para las tablas */
+        table {
+            width: 80%; /* Reducir el tamaño de las tablas */
+            margin: 20px auto;
+            border-collapse: collapse;
+            font-style: bold;
+            border: 2px solid #40E0D0; /* Borde azul turquesa */
+            text-align: center; /* Centrado de contenido dentro de las tablas */
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center; /* Centrado del contenido */
+            color: white;
+        }
+
+        /* Tabla de envíos */
+        .gold-table {
+            background-color: #000000;
+        }
+
+        .gold-table img {
+            width: 80px; /* Tamaño inicial de la imagen del camión */
+            height: 80px;
+            border-radius: 50%;
+        }
+
+        /* Tabla con imágenes y descripciones */
+        .gold-table-images {
+            background-color: #000000;
+        }
+
+        .gold-table-images img {
+            width: 100%; /* Ajustar la imagen al ancho de la celda */
+            height: auto;
+        }
+
+        .gold-table-images img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Tabla "Quiénes somos" */
+        .gray-table {
+            background-color: #000000;
+        }
+
+        /* Tabla de ubicación */
+        .gray-table {
+            background-color: #000000;
+        }
+
+        /* Botón de ubicación */
+        .button {
+            background-color: #40E0D0;
+            color: rgb(255, 255, 255);
+            padding: 10px 20px;
+            text-align: center;
+            cursor: pointer;
+            margin-top: 10px;
+            border: none;
+            font-style: bold;
+        }
+
+        .button:hover {
+            background-color: #000000;
+        }
+
+        /* Tabla de redes sociales */
+        .social-icons img {
+            width: 40px;
+            margin: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .social-icons img:hover {
+            transform: scale(1.2);
+        }
+
+        .social-text {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        /* Frase de agradecimiento */
+        .thank-you {
+            background-color: #000000;
+            text-align: left;
+            padding: 10px;
+            font-style: bold;
+            width: 90%;
+            margin: 20px auto;
+        }
+
+        /* Contenedor para el texto y las imágenes */
+        .image-container {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .image-container img {
+            border-radius: 50%; /* Para las imágenes circulares */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Contenedor para la imagen principal y el texto -->
+    <div class="main-container">
+        <img src="https://scontent.fmex5-1.fna.fbcdn.net/v/t39.30808-6/419257106_367582092694708_2671917173911170927_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=vjy0CVlcbB0Q7kNvgEntINN&_nc_oc=AdgJ8-4G0MYB8sr2kBqWz6qRyE2g36o81TXP9-HfOxa_U2GAdOjq3TP-5uik96g9MZsz0Znhexg3LSNwb4Un63dZ&_nc_zt=23&_nc_ht=scontent.fmex5-1.fna&_nc_gid=AH1TT4omfk-Slq1AAsBNt8P&oh=00_AYA0bj5qqk56S5Hff5jjnyZ52D9HtHUvDunNzJDeQnldMA&oe=67702ADC" alt="Imagen Principal" class="main-image">
+        <div class="welcome-text">
+            ¡Bienvenido a RuEd Boutique! Estamos encantados de que nos visites.
+        </div>
+    </div>
+
+    <!-- Tabla de envíos -->
+    <table class="gold-table">
+        <tr>
+            <td><strong>Envíos sin costo en puntos acordados a las entregas</strong></td>
+            <td>
+                <img src="https://cdn.pixabay.com/animation/2022/11/10/13/26/13-26-03-556_512.gif" alt="Camión de Envío" style="width: 100px; height: 100px;"> <!-- Ajuste aquí el tamaño -->
+            </td>
+        </tr>
+    </table>
+
+    <!-- Tabla con 3 imágenes y descripciones -->
+    <table class="gold-table-images">
+        <tr>
+            <td>
+                <a href="">
+                    <img src="https://img.freepik.com/vector-premium/sitio-web-construccion-laptop_24911-54687.jpg" alt="Imagen 1" style="width: 150px; height: auto;"> <!-- Ajuste aquí el tamaño -->
+                </a>
+                <p>Descripción 1</p>
+            </td>
+            <td>
+                <a href="">
+                    <img src="https://img.freepik.com/vector-premium/sitio-web-construccion-laptop_24911-54687.jpg" alt="Imagen 2" style="width: 150px; height: auto;"> <!-- Ajuste aquí el tamaño -->
+                </a>
+                <p>Descripción 2</p>
+            </td>
+            <td>
+                <a href="">
+                    <img src="https://img.freepik.com/vector-premium/sitio-web-construccion-laptop_24911-54687.jpg" alt="Imagen 3" style="width: 150px; height: auto;"> <!-- Ajuste aquí el tamaño -->
+                </a>
+                <p>Descripción 3</p>
+            </td>
+        </tr>
+    </table>
+
+    <!-- Tabla "Quiénes somos" -->
+    <table class="gray-table">
+        <tr>
+            <td>
+                <img src="https://img.freepik.com/vector-premium/sitio-web-construccion-laptop_24911-54687.jpg" alt="Quiénes Somos" style="width: 150px; height: auto;"> <!-- Ajuste aquí el tamaño -->
+            </td>
+            <td>
+                <p>Somos una boutique dedicada a ofrecer lo mejor de la moda. Trabajamos con productos exclusivos para ti.</p>
+            </td>
+        </tr>
+    </table>
+
+<!-- Tabla de ubicación con botón -->
+<table class="gray-table">
+    <tr>
+        <td>
+            <img src="https://segundoasegundo.com/wp-content/uploads/2016/02/maps-googke.jpg" alt="Bodega Matrix" style="width: 180px; height: auto;"> <!-- Ajuste aquí el tamaño -->
+        </td>
+        <td>
+            <p>Dirección: Calle Ficticia 123, Ciudad, País</p>
+            <button class="button" onclick="window.open('https://www.google.com/maps', '_blank')">Nuestra Ubicación</button>
+        </td>
+    </tr>
+</table>
+
+    <!-- Tabla con redes sociales y medios de contacto -->
+    <table class="gold-table">
+        <tr>
+            <td class="social-text">
+                <p>¿Quieres saber de nuestras promociones y ofertas? Síguenos en nuestras redes sociales o contactanos:</p>
+            </td>
+        </tr>
+        <tr>
+            <td class="social-icons">
+                <a href="https://www.facebook.com/p/RuEd-Boutique-100083287595230/" target="_blank">
+                    <img src="https://e7.pngegg.com/pngimages/670/159/png-clipart-facebook-logo-social-media-facebook-computer-icons-linkedin-logo-facebook-icon-media-internet-thumbnail.png" alt="Facebook" style="width: 40px; height: 40px;"> <!-- Ajuste aquí el tamaño -->
+                </a>
+                <a href="https://www.instagram.com/ruedboutique/" target="_blank">
+                    <img src="https://i.pinimg.com/474x/1e/d6/e0/1ed6e0a9e69176a5fdb7e090a1046b86.jpg" alt="Instagram" style="width: 40px; height: 40px;"> <!-- Ajuste aquí el tamaño -->
+                </a>
+                <a href="https://www.tiktok.com/@ruedboutique" target="_blank">
+                    <img src="https://w7.pngwing.com/pngs/987/397/png-transparent-tiktok-social-media-logo-apps-social-media-icon-thumbnail.png" alt="TikTok" style="width: 40px; height: 40px;"> <!-- Ajuste aquí el tamaño -->
+                </a>
+                <a href="https://wa.me/5511702629" target="_blank">
+                    <img src="https://img.freepik.com/vector-premium/logotipo-whatsapp-redondo-aislado-sobre-fondo-blanco_469489-900.jpg?w=360" alt="Instagram" style="width: 40px; height: 40px;"> <!-- Ajuste aquí el tamaño -->
+                </a>
+            </td>
+        </tr>
+    </table>
+
+    <!-- Frase de agradecimiento -->
+    <div class="thank-you">
+        <p>¡Gracias por visitarnos! Tu confianza es muy importante para nosotros.</p>
+    </div>
+
+</body>
+</html>
